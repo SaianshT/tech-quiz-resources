@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Quiz Mastery Repository</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Official Archive</div>
+            <h1>Tech Quiz Mastery Repo</h1>
+            <p>An open-source tech trivia and corporate lore database.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="knowledge-base-section" class="dashboard-tab">
+            <div class="kb-header">
+                <h2>📚 The Knowledge Base</h2>
+                <p>Explore the complete archive of corporate lore, codenames, and tech media.</p>
+            </div>
+
+            <div class="kb-controls">
+                <select id="kb-category-select" class="modern-select">
+                    </select>
+                <input type="text" id="kb-search" class="modern-input" placeholder="🔍 Search current category...">
+            </div>
+
+            <div class="table-responsive">
+                <table id="kb-table" class="data-table">
+                    <thead id="kb-table-head">
+                        </thead>
+                    <tbody id="kb-table-body">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
