@@ -26,7 +26,7 @@ body {
 /* Hero Header */
 .hero {
     background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
@@ -44,24 +44,128 @@ body {
     margin: 0 auto;
 }
 
-.badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background-color: rgba(59, 130, 246, 0.1);
-    color: var(--accent);
-    border-radius: 9999px;
-    font-size: 0.875rem;
+/* Navigation Tabs */
+.tab-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
-    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    color: var(--text-primary);
+}
+
+.nav-btn.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* Main Container */
 .container {
-    max-width: 1200px;
+    max-width: 1300px; /* Widened slightly to help wide tables */
     margin: 0 auto;
     padding: 2rem;
 }
 
+/* Home Section Layout */
+.welcome-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.action-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.2s ease;
+    margin-bottom: 3rem;
+}
+
+.action-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.external-links {
+    text-align: left;
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+.external-links h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.external-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0f172a;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+}
+
+.external-card:hover {
+    border-color: var(--accent);
+}
+
+.link-title {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.link-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Knowledge Base Controls */
 .kb-header {
     margin-bottom: 2rem;
 }
@@ -75,7 +179,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* Controls */
 .kb-controls {
     display: flex;
     gap: 1rem;
@@ -110,22 +213,23 @@ body {
     border-color: var(--accent);
 }
 
-/* Dynamic Table Styling */
+/* Dynamic Table Styling (Updated for Full Width & Scrolling) */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    max-height: 650px; 
+    max-height: 700px; 
     overflow-y: auto;
 }
 
 .data-table {
     width: 100%;
+    min-width: 1000px; /* Forces scroll instead of squishing and cutting off text */
     border-collapse: collapse;
     text-align: left;
-    white-space: normal;
+    table-layout: auto;
 }
 
 .data-table th {
@@ -133,12 +237,13 @@ body {
     top: 0;
     background-color: #0f172a;
     color: var(--accent);
-    padding: 1rem;
+    padding: 1.2rem 1rem;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-bottom: 2px solid var(--border-color);
     z-index: 10;
+    white-space: nowrap; /* Keeps headers cleanly on one line */
 }
 
 .data-table td {
@@ -147,29 +252,29 @@ body {
     color: var(--text-primary);
     font-size: 0.95rem;
     vertical-align: top;
+    line-height: 1.5;
+    word-wrap: break-word; /* Allows long text/arrays to wrap cleanly */
 }
 
-/* Alternating row colors for readability */
 .data-table tbody tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.02);
 }
 
-/* Hover effect */
 .data-table tbody tr:hover {
     background-color: rgba(59, 130, 246, 0.1);
 }
 
 /* Custom Scrollbar */
 .table-responsive::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
 }
 .table-responsive::-webkit-scrollbar-track {
-    background: var(--card-bg); 
+    background: var(--bg-color); 
 }
 .table-responsive::-webkit-scrollbar-thumb {
     background: #475569; 
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .table-responsive::-webkit-scrollbar-thumb:hover {
     background: #64748b; 
