@@ -13,9 +13,9 @@ const categoryMap = {
     "acronyms.gaming": "🎮 Acronyms: Gaming Terminology",
     "acronyms.corporate_etymology": "🏛️ Acronyms: Corporate Etymology",
     "books": "📖 Books by Tech Personalities",
-    "tech_based_media.movies": "🎬 Tech-Based Media: Movies",
-    "tech_based_media.books": "📚 Tech-Based Media: Sci-Fi Books",
-    "tech_based_media.web_series": "📺 Tech-Based Media: Web Series"
+    "media.movies": "🎬 Tech-Based Media: Movies",
+    "media.books": "📚 Tech-Based Media: Sci-Fi Books",
+    "media.web_series": "📺 Tech-Based Media: Web Series"
 };
 
 document.addEventListener('DOMContentLoaded', () => {
