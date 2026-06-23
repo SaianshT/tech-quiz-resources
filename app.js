@@ -1,24 +1,50 @@
 let kbData = {};
 let currentTableData = [];
 
-// A mapping to convert your JSON keys into clean Dropdown titles
+// Clean category mapping matching your exact JSON structure without emojis
 const categoryMap = {
-    "it_companies": "🏢 Major IT Companies & Lore",
-    "indian_startups": "🚀 Indian Startups Ecosystem",
-    "codenames.windows": "💻 Codenames: Windows OS",
-    "codenames.android": "📱 Codenames: Android OS",
-    "codenames.intel": "⚙️ Codenames: Intel Processors",
-    "codenames.macos": "🍏 Codenames: Apple macOS",
-    "acronyms.it_infrastructure": "🔌 Acronyms: IT Infrastructure",
-    "acronyms.gaming": "🎮 Acronyms: Gaming Terminology",
-    "acronyms.corporate_etymology": "🏛️ Acronyms: Corporate Etymology",
-    "books": "📖 Books by Tech Personalities",
-    "media.movies": "🎬 Tech-Based Media: Movies",
-    "media.books": "📚 Tech-Based Media: Sci-Fi Books",
-    "media.web_series": "📺 Tech-Based Media: Web Series"
+    "it_companies": "Major IT Companies & Lore",
+    "indian_startups": "Indian Startups Ecosystem",
+    "codenames.windows": "Codenames: Windows OS",
+    "codenames.android": "Codenames: Android OS",
+    "codenames.intel": "Codenames: Intel Processors",
+    "codenames.macos": "Codenames: Apple macOS",
+    "acronyms.it_infrastructure": "Acronyms: IT Infrastructure",
+    "acronyms.gaming": "Acronyms: Gaming Terminology",
+    "acronyms.corporate_etymology": "Acronyms: Corporate Etymology",
+    "books": "Books by Tech Personalities",
+    "media.movies": "Tech-Based Media: Movies",
+    "media.books": "Tech-Based Media: Sci-Fi Books",
+    "media.web_series": "Tech-Based Media: Web Series"
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Tab Navigation Logic
+    const navHome = document.getElementById('nav-home');
+    const navKb = document.getElementById('nav-kb');
+    const btnEnterKb = document.getElementById('enter-kb-btn');
+    
+    const secHome = document.getElementById('home-section');
+    const secKb = document.getElementById('kb-section');
+
+    function switchTab(target) {
+        if (target === 'home') {
+            secHome.classList.remove('hidden');
+            secKb.classList.add('hidden');
+            navHome.classList.add('active');
+            navKb.classList.remove('active');
+        } else {
+            secHome.classList.add('hidden');
+            secKb.classList.remove('hidden');
+            navHome.classList.remove('active');
+            navKb.classList.add('active');
+        }
+    }
+
+    navHome.addEventListener('click', () => switchTab('home'));
+    navKb.addEventListener('click', () => switchTab('kb'));
+    btnEnterKb.addEventListener('click', () => switchTab('kb'));
+
     // Fetch the JSON database file
     fetch('knowledgebase.json')
         .then(response => {
@@ -34,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('kb-table-body').innerHTML = `<tr><td style="text-align:center; padding:2rem;">Could not load database.json. Make sure the file is in the same folder.</td></tr>`;
         });
 
-    // Search bar event listener for live filtering
+    // Live search filter
     document.getElementById('kb-search').addEventListener('input', (e) => {
         renderTable(currentTableData, e.target.value);
     });
@@ -51,17 +77,17 @@ function initKnowledgeBase() {
         select.appendChild(option);
     });
 
-    // Listen for category changes
+    // Update table on selection change
     select.addEventListener('change', (e) => {
         loadCategoryData(e.target.value);
-        document.getElementById('kb-search').value = ''; // Reset search on change
+        document.getElementById('kb-search').value = ''; 
     });
 
-    // Load the first category by default
+    // Preload first category
     loadCategoryData(select.value);
 }
 
-// Utility to navigate nested JSON paths (e.g., "codenames.windows")
+// Navigates nested JSON paths (e.g., "media.movies")
 function getNestedData(obj, path) {
     return path.split('.').reduce((acc, part) => acc && acc[part], obj);
 }
@@ -70,7 +96,7 @@ function loadCategoryData(path) {
     let rawData = getNestedData(kbData, path);
     if (!rawData) return;
 
-    // Normalize arrays of simple strings (like the media lists) into objects so they render as a table row
+    // Convert flat string arrays (like media lists) into table-ready objects
     if (typeof rawData[0] === 'string') {
         currentTableData = rawData.map(item => ({ "Entry Title": item }));
     } else {
@@ -80,7 +106,7 @@ function loadCategoryData(path) {
     renderTable(currentTableData);
 }
 
-// Utility to format JSON keys into clean column headers
+// Format JSON keys into clean table headers
 function formatHeader(str) {
     return str.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
 }
@@ -94,7 +120,7 @@ function renderTable(dataArray, searchTerm = "") {
 
     if (dataArray.length === 0) return;
 
-    // 1. Generate Headers Dynamically from the first object's keys
+    // Generate Headers
     const headers = Object.keys(dataArray[0]);
     const headerRow = document.createElement('tr');
     headers.forEach(key => {
@@ -104,29 +130,28 @@ function renderTable(dataArray, searchTerm = "") {
     });
     thead.appendChild(headerRow);
 
-    // 2. Filter data based on search term
+    // Filter by search
     const lowerSearch = searchTerm.toLowerCase();
     const filteredData = dataArray.filter(item => {
-        // Check if any value in the row contains the search term
         return Object.values(item).some(val => {
             if (Array.isArray(val)) return val.join(' ').toLowerCase().includes(lowerSearch);
             return String(val).toLowerCase().includes(lowerSearch);
         });
     });
 
-    // 3. Generate Rows Dynamically
+    // Render Rows
     filteredData.forEach(item => {
         const row = document.createElement('tr');
         headers.forEach(key => {
             const td = document.createElement('td');
             let cellData = item[key];
             
-            // If the data is an array (like founders or acquisitions), join it cleanly with commas
+            // Format arrays safely with commas
             if (Array.isArray(cellData)) {
                 cellData = cellData.length > 0 ? cellData.join(', ') : '—';
             }
             
-            td.textContent = cellData || '—'; // Fallback for empty values
+            td.textContent = cellData || '—';
             row.appendChild(td);
         });
         tbody.appendChild(row);
