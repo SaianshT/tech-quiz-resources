@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Quiz Mastery Library</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,30 +15,44 @@
         </div>
     </header>
 
-    <nav class="tab-nav">
-        <button id="nav-home" class="nav-btn active">Home</button>
-        <button id="nav-kb" class="nav-btn">Knowledge Base</button>
-    </nav>
-
     <main class="container">
-        <section id="home-section" class="view-section">
-            <div class="welcome-card">
-                <h2>Welcome to the Arena</h2>
-                <p>This repository serves as the central hub for competitive tech quizzing preparation. Access curated lists of corporate lore, historical milestones, codenames, and more.</p>
+        <!-- HOME PAGE -->
+        <section id="view-home" class="view-section">
+            <div class="dashboard-grid">
+                <!-- 1. Knowledge Base -->
+                <button class="dash-card" data-target="view-kb">
+                    <span class="icon">📚</span>
+                    <h3>Knowledge Base</h3>
+                    <p>Corporate lore, historical milestones, and codenames.</p>
+                </button>
                 
-                <button id="enter-kb-btn" class="action-btn">Enter Knowledge Base &rarr;</button>
+                <!-- 2. Practice Quizzes -->
+                <button class="dash-card" data-target="view-quizzes">
+                    <span class="icon">⚡</span>
+                    <h3>Practice Quizzes</h3>
+                    <p>Test your speed in the interactive flashcard arena.</p>
+                </button>
                 
-                <div class="external-links">
+                <!-- 3. Strategy -->
+                <button class="dash-card" data-target="view-strategy">
+                    <span class="icon">♟️</span>
+                    <h3>Strategy</h3>
+                    <p>Game theory, bidding, and buzzer mechanics.</p>
+                </button>
+                
+                <!-- 4. External Resources -->
+                <button class="dash-card" data-target="view-external">
+                    <span class="icon">🔗</span>
                     <h3>External Resources</h3>
-                    <a href="https://doodles.google/search/?topic_tags=video%20games&topic_tags=computer%20science&topic_tags=engineering&topic_tags=space&topic_tags=telecommunications" target="_blank" class="external-card">
-                        <span class="link-title">Google Doodles Archive ↗</span>
-                        <span class="link-desc">Pre-sorted timelines for CS, Engineering, and Space milestones.</span>
-                    </a>
-                </div>
+                    <p>Google Doodles, circuit livestreams, and media.</p>
+                </button>
             </div>
         </section>
 
-        <section id="kb-section" class="view-section hidden">
+        <!-- KNOWLEDGE BASE PAGE -->
+        <section id="view-kb" class="view-section hidden">
+            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
+            
             <div class="kb-header">
                 <h2>The Knowledge Base</h2>
                 <p>Select a category to load its data, or use the search bar to filter entries instantly.</p>
@@ -48,17 +60,50 @@
 
             <div class="kb-controls">
                 <select id="kb-category-select" class="modern-select">
-                    </select>
+                    <!-- Options injected by JavaScript -->
+                </select>
                 <input type="text" id="kb-search" class="modern-input" placeholder="Search current category...">
             </div>
 
             <div class="table-responsive">
                 <table id="kb-table" class="data-table">
-                    <thead id="kb-table-head">
-                        </thead>
-                    <tbody id="kb-table-body">
-                        </tbody>
+                    <thead id="kb-table-head"></thead>
+                    <tbody id="kb-table-body"></tbody>
                 </table>
+            </div>
+        </section>
+
+        <!-- PRACTICE QUIZZES PAGE (Placeholder) -->
+        <section id="view-quizzes" class="view-section hidden">
+            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
+            <div class="kb-header">
+                <h2>⚡ The Arena</h2>
+                <p>The 1,500+ flashcard practice engine is currently under construction.</p>
+            </div>
+        </section>
+
+        <!-- STRATEGY PAGE (Placeholder) -->
+        <section id="view-strategy" class="view-section hidden">
+            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
+            <div class="kb-header">
+                <h2>♟️ Strategic Blueprint</h2>
+                <p>High-level game theory and mechanics guides are currently under construction.</p>
+            </div>
+        </section>
+
+        <!-- EXTERNAL RESOURCES PAGE -->
+        <section id="view-external" class="view-section hidden">
+            <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
+            <div class="kb-header">
+                <h2>🔗 External Resources</h2>
+                <p>Curated links to live databases and competitive archives.</p>
+            </div>
+            
+            <div class="external-links-container">
+                <a href="https://doodles.google/search/?topic_tags=video%20games&topic_tags=computer%20science&topic_tags=engineering&topic_tags=space&topic_tags=telecommunications" target="_blank" class="external-card">
+                    <span class="link-title">Google Doodles Archive ↗</span>
+                    <span class="link-desc">Pre-sorted timelines for CS, Engineering, Space, and Telecommunications milestones.</span>
+                </a>
             </div>
         </section>
     </main>
