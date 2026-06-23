@@ -26,7 +26,7 @@ body {
 /* Hero Header */
 .hero {
     background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-    padding: 3rem 2rem;
+    padding: 3.5rem 2rem;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
@@ -44,105 +44,96 @@ body {
     margin: 0 auto;
 }
 
-/* Navigation Tabs */
-.tab-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1.5rem 2rem;
-    background-color: var(--bg-color);
-    border-bottom: 1px solid var(--border-color);
+/* View Management */
+.hidden {
+    display: none !important;
 }
 
-.nav-btn {
+.container {
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* --- HOME PAGE DASHBOARD GRID --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dash-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+.dash-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.dash-card .icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.dash-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.dash-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Top Back Button */
+.back-btn {
     background: none;
     border: none;
     color: var(--text-secondary);
     font-size: 1.05rem;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
+    margin-bottom: 2rem;
+    display: inline-block;
+    transition: color 0.2s ease;
+    font-weight: 600;
 }
 
-.nav-btn:hover {
-    color: var(--text-primary);
-}
-
-.nav-btn.active {
+.back-btn:hover {
     color: var(--accent);
-    border-bottom: 2px solid var(--accent);
 }
 
-.hidden {
-    display: none !important;
-}
-
-/* Main Container */
-.container {
-    max-width: 1300px; /* Widened slightly to help wide tables */
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Home Section Layout */
-.welcome-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 3rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.welcome-card h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.welcome-card p {
-    color: var(--text-secondary);
-    margin-bottom: 2.5rem;
-    font-size: 1.1rem;
-}
-
-.action-btn {
-    background-color: var(--accent);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    transition: background-color 0.2s ease;
-    margin-bottom: 3rem;
-}
-
-.action-btn:hover {
-    background-color: var(--accent-hover);
-}
-
-.external-links {
-    text-align: left;
-    border-top: 1px solid var(--border-color);
-    padding-top: 2rem;
-}
-
-.external-links h3 {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    color: var(--text-secondary);
+/* External Resources Links */
+.external-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
 }
 
 .external-card {
     display: flex;
     flex-direction: column;
-    background-color: #0f172a;
+    background-color: var(--card-bg);
     padding: 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -158,20 +149,21 @@ body {
     color: var(--accent);
     font-weight: 600;
     margin-bottom: 0.25rem;
+    font-size: 1.1rem;
 }
 
 .link-desc {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
-/* Knowledge Base Controls */
+/* --- KNOWLEDGE BASE CONTROLS & TABLE --- */
 .kb-header {
     margin-bottom: 2rem;
 }
 
 .kb-header h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -213,7 +205,7 @@ body {
     border-color: var(--accent);
 }
 
-/* Dynamic Table Styling (Updated for Full Width & Scrolling) */
+/* Full Width Table Structure */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -226,7 +218,7 @@ body {
 
 .data-table {
     width: 100%;
-    min-width: 1000px; /* Forces scroll instead of squishing and cutting off text */
+    min-width: 1000px; 
     border-collapse: collapse;
     text-align: left;
     table-layout: auto;
@@ -243,7 +235,7 @@ body {
     letter-spacing: 0.05em;
     border-bottom: 2px solid var(--border-color);
     z-index: 10;
-    white-space: nowrap; /* Keeps headers cleanly on one line */
+    white-space: nowrap; 
 }
 
 .data-table td {
@@ -253,7 +245,7 @@ body {
     font-size: 0.95rem;
     vertical-align: top;
     line-height: 1.5;
-    word-wrap: break-word; /* Allows long text/arrays to wrap cleanly */
+    word-wrap: break-word; 
 }
 
 .data-table tbody tr:nth-child(even) {
