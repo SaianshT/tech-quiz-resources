@@ -1,7 +1,7 @@
 let kbData = {};
 let currentTableData = [];
 
-// Clean category mapping matching your exact JSON structure without emojis
+// Clean category mapping matching your exact JSON structure
 const categoryMap = {
     "it_companies": "Major IT Companies & Lore",
     "indian_startups": "Indian Startups Ecosystem",
@@ -19,33 +19,23 @@ const categoryMap = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Tab Navigation Logic
-    const navHome = document.getElementById('nav-home');
-    const navKb = document.getElementById('nav-kb');
-    const btnEnterKb = document.getElementById('enter-kb-btn');
-    
-    const secHome = document.getElementById('home-section');
-    const secKb = document.getElementById('kb-section');
+    // --- Page Routing Logic ---
+    const routeButtons = document.querySelectorAll('[data-target]');
+    const views = document.querySelectorAll('.view-section');
 
-    function switchTab(target) {
-        if (target === 'home') {
-            secHome.classList.remove('hidden');
-            secKb.classList.add('hidden');
-            navHome.classList.add('active');
-            navKb.classList.remove('active');
-        } else {
-            secHome.classList.add('hidden');
-            secKb.classList.remove('hidden');
-            navHome.classList.remove('active');
-            navKb.classList.add('active');
-        }
-    }
+    routeButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const targetId = e.currentTarget.getAttribute('data-target');
+            
+            // Hide all views
+            views.forEach(view => view.classList.add('hidden'));
+            
+            // Show the target view
+            document.getElementById(targetId).classList.remove('hidden');
+        });
+    });
 
-    navHome.addEventListener('click', () => switchTab('home'));
-    navKb.addEventListener('click', () => switchTab('kb'));
-    btnEnterKb.addEventListener('click', () => switchTab('kb'));
-
-    // Fetch the JSON database file
+    // --- Knowledge Base Initialization ---
     fetch('knowledgebase.json')
         .then(response => {
             if (!response.ok) throw new Error("Database not found.");
@@ -57,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error("Error loading knowledge base:", error);
-            document.getElementById('kb-table-body').innerHTML = `<tr><td style="text-align:center; padding:2rem;">Could not load database.json. Make sure the file is in the same folder.</td></tr>`;
+            document.getElementById('kb-table-body').innerHTML = `<tr><td style="text-align:center; padding:2rem;">Could not load knowledgebase.json. Please ensure it is uploaded.</td></tr>`;
         });
 
     // Live search filter
