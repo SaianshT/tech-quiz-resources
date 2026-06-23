@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tech Quiz Mastery Repository</title>
+    <title>Tech Quiz Mastery Library</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     
@@ -12,23 +12,44 @@
 <body>
     <header class="hero">
         <div class="hero-content">
-            <div class="badge">Official Archive</div>
-            <h1>Tech Quiz Mastery Repo</h1>
-            <p>An open-source tech trivia and corporate lore database.</p>
+            <h1>Tech Quiz Mastery Library</h1>
+            <p>An open-source tech trivia database by Saiansh Tapuriah</p>
         </div>
     </header>
 
+    <nav class="tab-nav">
+        <button id="nav-home" class="nav-btn active">Home</button>
+        <button id="nav-kb" class="nav-btn">Knowledge Base</button>
+    </nav>
+
     <main class="container">
-        <section id="knowledge-base-section" class="dashboard-tab">
+        <section id="home-section" class="view-section">
+            <div class="welcome-card">
+                <h2>Welcome to the Arena</h2>
+                <p>This repository serves as the central hub for competitive tech quizzing preparation. Access curated lists of corporate lore, historical milestones, codenames, and more.</p>
+                
+                <button id="enter-kb-btn" class="action-btn">Enter Knowledge Base &rarr;</button>
+                
+                <div class="external-links">
+                    <h3>External Resources</h3>
+                    <a href="https://doodles.google/search/?topic_tags=video%20games&topic_tags=computer%20science&topic_tags=engineering&topic_tags=space&topic_tags=telecommunications" target="_blank" class="external-card">
+                        <span class="link-title">Google Doodles Archive ↗</span>
+                        <span class="link-desc">Pre-sorted timelines for CS, Engineering, and Space milestones.</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="kb-section" class="view-section hidden">
             <div class="kb-header">
-                <h2>📚 The Knowledge Base</h2>
-                <p>Explore the complete archive of corporate lore, codenames, and tech media.</p>
+                <h2>The Knowledge Base</h2>
+                <p>Select a category to load its data, or use the search bar to filter entries instantly.</p>
             </div>
 
             <div class="kb-controls">
                 <select id="kb-category-select" class="modern-select">
                     </select>
-                <input type="text" id="kb-search" class="modern-input" placeholder="🔍 Search current category...">
+                <input type="text" id="kb-search" class="modern-input" placeholder="Search current category...">
             </div>
 
             <div class="table-responsive">
