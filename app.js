@@ -357,3 +357,41 @@ function changeListPage(direction) {
     // Scroll to top of list container smoothly
     document.getElementById('list-container').scrollIntoView({ behavior: 'smooth' });
 }
+
+// ==========================================
+// 🔗 EXTERNAL RESOURCES: TCS ARCHIVE LOGIC
+// ==========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Setup Navigation for the new TCS Archive Page
+    const tcsLauncher = document.querySelector('.tcs-launcher');
+    if (tcsLauncher) {
+        tcsLauncher.addEventListener('click', (e) => {
+            const targetId = e.currentTarget.getAttribute('data-target');
+            // Hide all views
+            document.querySelectorAll('.view-section').forEach(sec => sec.classList.add('hidden'));
+            // Show target
+            document.getElementById(targetId).classList.remove('hidden');
+        });
+    }
+
+    // 2. Setup Year Toggle Logic
+    const yearButtons = document.querySelectorAll('.year-btn');
+    yearButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Hide all link panels
+            document.querySelectorAll('.links-panel').forEach(panel => panel.classList.add('hidden'));
+            
+            // Remove active styling from all year buttons
+            yearButtons.forEach(b => b.classList.remove('active-year'));
+
+            // Show selected panel and highlight button
+            const year = e.target.getAttribute('data-year');
+            const targetPanel = document.getElementById(`links-${year}`);
+            if (targetPanel) {
+                targetPanel.classList.remove('hidden');
+            }
+            e.target.classList.add('active-year');
+        });
+    });
+});
