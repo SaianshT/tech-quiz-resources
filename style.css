@@ -580,3 +580,85 @@ body {
     margin-right: 0.75rem;
     font-size: 1.2rem;
 }
+
+/* --- TCS ARCHIVE UI STYLES --- */
+.tcs-launcher {
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.tcs-launcher:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.year-button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.active-year {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+}
+
+.links-panel h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.video-button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.video-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.video-btn:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    color: var(--accent);
+}
+
+.video-btn::after {
+    content: '▶';
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.video-btn:hover::after {
+    color: var(--accent);
+}
+
+.highlight-btn {
+    border-color: var(--accent);
+    background-color: rgba(59, 130, 246, 0.05);
+}
