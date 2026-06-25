@@ -494,3 +494,89 @@ body {
 .text-btn:hover { color: var(--text-primary); }
 .text-danger { color: #ef4444; }
 .text-danger:hover { color: #f87171; }
+
+/* --- TCS ARCHIVE ACCORDION STYLES --- */
+.tcs-archive-card {
+    cursor: default; /* Overrides the external card pointer */
+}
+
+.tcs-archive-card:hover {
+    border-color: var(--border-color); /* Prevents the whole box from glowing */
+}
+
+.archive-tree {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.archive-year summary {
+    cursor: pointer;
+    padding: 0.85rem 1rem;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 6px;
+    color: var(--accent);
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.archive-year summary::-webkit-details-marker {
+    display: none; /* Hides default browser arrow */
+}
+
+.archive-year summary::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 0.75rem;
+    font-size: 0.8rem;
+    transition: transform 0.2s;
+}
+
+.archive-year[open] summary::before {
+    transform: rotate(90deg); /* Animates arrow pointing down */
+}
+
+.archive-year summary:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+}
+
+.archive-year ul {
+    margin: 0.5rem 0 1rem 2.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.archive-year ul li {
+    margin-bottom: 0.75rem;
+}
+
+.archive-year strong, .archive-single strong {
+    color: var(--text-primary);
+}
+
+.sub-text {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.2rem;
+}
+
+.archive-single {
+    padding: 0.85rem 1rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.archive-single::before {
+    content: '•';
+    color: var(--accent);
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+}
