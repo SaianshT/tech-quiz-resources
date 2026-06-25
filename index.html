@@ -69,8 +69,73 @@
         <section id="view-quizzes" class="view-section hidden">
             <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
             <div class="kb-header">
-                <h2>💡 The Arena</h2>
-                <p>The interactive practice engine is currently under construction.</p>
+                <h2>💡 The Quizzing Arena</h2>
+                <p>Configure your practice quiz Select your categories, choose your difficulties, and drop into the arena.</p>
+            </div>
+
+            <div id="quiz-setup-panel" class="quiz-setup-card">
+                <div class="filter-section">
+                    <h3>1. Select Categories</h3>
+                    <button id="select-all-cats" class="text-btn">Select All / None</button>
+                    <div id="quiz-category-checkboxes" class="checkbox-grid">
+                        </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>2. Select Difficulty</h3>
+                    <div id="quiz-difficulty-checkboxes" class="checkbox-grid">
+                        <label><input type="checkbox" value="easy" checked> Easy</label>
+                        <label><input type="checkbox" value="medium" checked> Medium</label>
+                        <label><input type="checkbox" value="hard" checked> Hard</label>
+                    </div>
+                </div>
+
+                <div class="quiz-launch-actions">
+                    <button id="btn-launch-flashcards" class="action-btn">Launch Flashcards</button>
+                    <button id="btn-launch-list" class="action-btn alt-btn">Launch List View</button>
+                </div>
+            </div>
+
+            <div id="quiz-active-panel" class="hidden">
+                <div class="active-quiz-header">
+                    <button id="btn-exit-quiz" class="text-btn text-danger">&larr; End Session</button>
+                    <span id="quiz-progress-tracker" class="progress-badge"></span>
+                </div>
+
+                <div id="flashcard-view" class="hidden">
+                    <div class="flashcard-scene">
+                        <div id="flashcard" class="flashcard">
+                            <div class="flashcard-face flashcard-front">
+                                <div class="card-meta">
+                                    <span class="badge cat-badge" id="fc-cat">Category</span>
+                                    <span class="badge diff-badge" id="fc-diff">Difficulty</span>
+                                </div>
+                                <h3 id="fc-question" class="fc-text">Question goes here?</h3>
+                                <p class="fc-hint">Click card to reveal answer</p>
+                            </div>
+                            <div class="flashcard-face flashcard-back">
+                                <div class="card-meta">
+                                    <span class="badge cat-badge" id="fc-cat-back">Category</span>
+                                    <span class="badge diff-badge" id="fc-diff-back">Difficulty</span>
+                                </div>
+                                <h3 id="fc-answer" class="fc-text answer-text">Answer goes here</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashcard-controls">
+                        <button id="btn-next-card" class="action-btn">Next Question &rarr;</button>
+                    </div>
+                </div>
+
+                <div id="list-view" class="hidden">
+                    <div id="list-container" class="list-container">
+                        </div>
+                    <div class="pagination-controls">
+                        <button id="btn-prev-page" class="action-btn alt-btn">&larr; Previous</button>
+                        <span id="page-indicator">Page 1 of X</span>
+                        <button id="btn-next-page" class="action-btn alt-btn">Next &rarr;</button>
+                    </div>
+                </div>
             </div>
         </section>
 
