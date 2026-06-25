@@ -5596,6 +5596,1406 @@
       "difficulty": "easy",
       "question": "What programmatic code engineering rule defines a functional pattern where an active routine or method calls itself from inside its own execution block?",
       "answer": "Recursion"
+    },
+    {
+      "id": 801,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which classic computer science algorithm is utilized to find the shortest path between nodes in a graph?",
+      "answer": "Dijkstra's Algorithm"
+    },
+    {
+      "id": 802,
+      "category": "programming",
+      "difficulty": "easy",
+      "question": "Which core Object-Oriented Programming (OOP) principle involves hiding the internal state of an object and requiring all interaction to be performed through an object's methods?",
+      "answer": "Encapsulation"
+    },
+    {
+      "id": 803,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which structural design principle suggests building complex objects by combining simpler, interchangeable objects rather than inheriting from a massive parent class?",
+      "answer": "Composition (Composition over Inheritance)"
+    },
+    {
+      "id": 804,
+      "category": "programming",
+      "difficulty": "easy",
+      "question": "In software engineering best practices, what does the fundamental coding acronym DRY stand for?",
+      "answer": "Don't Repeat Yourself"
+    },
+    {
+      "id": 805,
+      "category": "programming",
+      "difficulty": "easy",
+      "question": "Which popular software design principle advocates that systems perform best when they have simple, un-complex designs, summarizing it with a 4-letter acronym?",
+      "answer": "KISS (Keep It Simple, Stupid)"
+    },
+    {
+      "id": 806,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which mathematical notation is universally used in computer science to classify algorithms according to how their run time or space requirements grow?",
+      "answer": "Big O Notation"
+    },
+    {
+      "id": 807,
+      "category": "programming",
+      "difficulty": "hard",
+      "question": "Which specialized tree-based data structure is the optimal and most common way to implement a priority queue?",
+      "answer": "A Heap"
+    },
+    {
+      "id": 808,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which standard graph traversal algorithm explores a tree structure layer-by-layer, evaluating all neighbor nodes at the present depth prior to moving deeper?",
+      "answer": "Breadth-First Search (BFS)"
+    },
+    {
+      "id": 809,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "In concurrent programming, what synchronization primitive is used to prevent multiple threads from simultaneously accessing a shared resource?",
+      "answer": "A Mutex (Mutual Exclusion Object)"
+    },
+    {
+      "id": 810,
+      "category": "programming",
+      "difficulty": "hard",
+      "question": "Which concurrency variable utilizes an internal counter to safely control thread access to a common resource pool?",
+      "answer": "A Semaphore"
+    },
+    {
+      "id": 811,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "What specific type of logical software error occurs when a computer cannot perfectly represent a decimal number, leading to tiny rounding discrepancies?",
+      "answer": "Floating-Point Error"
+    },
+    {
+      "id": 812,
+      "category": "programming",
+      "difficulty": "easy",
+      "question": "What severe performance issue occurs when a computer program incorrectly manages memory allocations and fails to release discarded data back to the OS?",
+      "answer": "A Memory Leak"
+    },
+    {
+      "id": 813,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which automated memory management feature, standard in Java and Python, periodically reclaims memory occupied by objects that are no longer in use?",
+      "answer": "Garbage Collection"
+    },
+    {
+      "id": 814,
+      "category": "programming",
+      "difficulty": "hard",
+      "question": "In functional programming, what term describes a function that always produces the exact same output for the same input and causes absolutely zero side effects?",
+      "answer": "A Pure Function"
+    },
+    {
+      "id": 815,
+      "category": "programming",
+      "difficulty": "hard",
+      "question": "When building a Hash Table, what collision resolution technique involves each bucket maintaining a linked list of entries that map to the same index?",
+      "answer": "Separate Chaining"
+    },
+    {
+      "id": 816,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which foundational programming paradigm involves writing code as a step-by-step sequence of explicit instructions that directly change the program's state?",
+      "answer": "Imperative Programming"
+    },
+    {
+      "id": 817,
+      "category": "programming",
+      "difficulty": "hard",
+      "question": "What functional programming concept describes a function that 'remembers' the environment and variable scope in which it was originally created?",
+      "answer": "A Closure"
+    },
+    {
+      "id": 818,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which JavaScript object represents the eventual completion (or failure) of an asynchronous operation and its resulting value?",
+      "answer": "A Promise"
+    },
+    {
+      "id": 819,
+      "category": "programming",
+      "difficulty": "hard",
+      "question": "Which Git command integrates changes from one branch into another by moving the entire feature branch to begin on the tip of the master branch, rewriting project history?",
+      "answer": "Git Rebase"
+    },
+    {
+      "id": 820,
+      "category": "programming",
+      "difficulty": "medium",
+      "question": "Which Python syntax feature allows developers to create a new list dynamically and concisely by applying an expression to an existing iterable inside square brackets?",
+      "answer": "List Comprehension"
+    },
+    {
+      "id": 821,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which free, community-driven Linux distribution serves as the upstream, experimental testing ground for Red Hat Enterprise Linux?",
+      "answer": "Fedora"
+    },
+    {
+      "id": 822,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "Which open-source workflow management platform, originally created at Airbnb, is used by data engineers to programmatically author and schedule data pipelines?",
+      "answer": "Apache Airflow"
+    },
+    {
+      "id": 823,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which highly popular, permissive open-source 2D and 3D game engine uses its own Python-like scripting language called GDScript?",
+      "answer": "Godot Engine"
+    },
+    {
+      "id": 824,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which powerful, distributed open-source search and analytics engine is built directly on top of the Apache Lucene library?",
+      "answer": "Elasticsearch"
+    },
+    {
+      "id": 825,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which lightning-fast, open-source, in-memory key-value data store is widely used across the industry as a caching layer to reduce database load?",
+      "answer": "Redis"
+    },
+    {
+      "id": 826,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which event-driven, serverless computing platform provided by Amazon Web Services allows developers to run code without provisioning any servers?",
+      "answer": "AWS Lambda"
+    },
+    {
+      "id": 827,
+      "category": "software",
+      "difficulty": "easy",
+      "question": "Which declarative, component-based open-source JavaScript library was created by Facebook to build highly responsive user interfaces?",
+      "answer": "ReactJS"
+    },
+    {
+      "id": 828,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which progressive, approachable JavaScript framework for building web interfaces was created by Evan You after he left Google?",
+      "answer": "VueJS"
+    },
+    {
+      "id": 829,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "Which modern front-end framework differentiates itself by shifting the bulk of its work to a compile step, outputting highly optimized vanilla JavaScript rather than using a virtual DOM?",
+      "answer": "Svelte"
+    },
+    {
+      "id": 830,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "In cloud-native architecture, what dedicated infrastructure layer is used to manage, observe, and secure service-to-service communication between microservices?",
+      "answer": "A Service Mesh"
+    },
+    {
+      "id": 831,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which open-source container orchestration engine was originally designed by Google to automate software deployment, scaling, and management?",
+      "answer": "Kubernetes"
+    },
+    {
+      "id": 832,
+      "category": "software",
+      "difficulty": "easy",
+      "question": "Which ubiquitous open-source relational database management system features an iconic dolphin named 'Sakila' as its official mascot?",
+      "answer": "MySQL"
+    },
+    {
+      "id": 833,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "Which lightweight, serverless C-language library implements a self-contained SQL database engine that is physically embedded directly into the host application?",
+      "answer": "SQLite"
+    },
+    {
+      "id": 834,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which modern, declarative UI framework was introduced by Apple in 2019 to completely replace UIKit for building apps across all Apple platforms?",
+      "answer": "SwiftUI"
+    },
+    {
+      "id": 835,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which open-source UI software development kit, created by Google and powered by the Dart language, is used to build natively compiled cross-platform apps?",
+      "answer": "Flutter"
+    },
+    {
+      "id": 836,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "Which binary instruction format allows developers to execute code written in C, C++, and Rust at near-native speeds directly inside web browsers?",
+      "answer": "WebAssembly (Wasm)"
+    },
+    {
+      "id": 837,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "Which language-neutral data serialization format, engineered by Google, is smaller, faster, and simpler than XML and JSON for compiling network communications?",
+      "answer": "Protocol Buffers (Protobuf)"
+    },
+    {
+      "id": 838,
+      "category": "software",
+      "difficulty": "easy",
+      "question": "Which lightweight virtualization technology isolates software applications from each other while allowing them to all share the same underlying operating system kernel?",
+      "answer": "Containers"
+    },
+    {
+      "id": 839,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In cloud computing architectures, what does the service deployment acronym PaaS stand for?",
+      "answer": "Platform as a Service"
+    },
+    {
+      "id": 840,
+      "category": "software",
+      "difficulty": "hard",
+      "question": "Which modern communication protocol is actively replacing the legacy X11 windowing system as the secure display server standard for Linux desktops?",
+      "answer": "Wayland"
+    },
+    {
+      "id": 841,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Measuring 12 by 9.6 inches, what is the most common, universally standard motherboard form factor used in consumer desktop PCs?",
+      "answer": "ATX (Advanced Technology eXtended)"
+    },
+    {
+      "id": 842,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Measuring just 6.7 by 6.7 inches, what is the standard motherboard form factor primarily utilized by PC enthusiasts to build ultra-compact, small form factor (SFF) systems?",
+      "answer": "Mini-ITX"
+    },
+    {
+      "id": 843,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "Which specific tier of CPU cache memory is physically embedded closest to the processor cores, making it the smallest but absolute fastest memory on the chip?",
+      "answer": "L1 Cache"
+    },
+    {
+      "id": 844,
+      "category": "hardware",
+      "difficulty": "easy",
+      "question": "What high-speed serial expansion bus standard is universally used to connect graphics cards, SSDs, and Wi-Fi adapters directly to a computer's motherboard?",
+      "answer": "PCIe (PCI Express)"
+    },
+    {
+      "id": 845,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "Which high-bandwidth, proprietary communications protocol was engineered by NVIDIA to link multiple GPUs together at speeds far exceeding standard PCIe lanes?",
+      "answer": "NVLink"
+    },
+    {
+      "id": 846,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "What is the official brand name for Intel's implementation of the next-generation Gate-All-Around (GAA) transistor architecture, designed to succeed FinFET?",
+      "answer": "RibbonFET"
+    },
+    {
+      "id": 847,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "Which notoriously complex, multi-core microprocessor architecture was jointly developed by Sony, Toshiba, and IBM to power the PlayStation 3?",
+      "answer": "The Cell Processor"
+    },
+    {
+      "id": 848,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Which emerging display technology utilizes millions of microscopic, self-illuminating inorganic diodes to achieve OLED-level black levels without the risk of screen burn-in?",
+      "answer": "MicroLED"
+    },
+    {
+      "id": 849,
+      "category": "hardware",
+      "difficulty": "easy",
+      "question": "Introduced to the consumer market in 2021, what is the current, high-speed generational standard for desktop and laptop RAM?",
+      "answer": "DDR5"
+    },
+    {
+      "id": 850,
+      "category": "IT companies",
+      "difficulty": "medium",
+      "question": "In semiconductor manufacturing, what specific term describes a massive chip fabrication facility that manufactures designs for other companies without designing any chips of its own?",
+      "answer": "Pure-Play Foundry"
+    },
+    {
+      "id": 851,
+      "category": "hardware",
+      "difficulty": "easy",
+      "question": "Which versatile, high-speed hardware interface standard was co-developed by Intel and Apple to combine PCIe data and DisplayPort video into a single cable connection?",
+      "answer": "Thunderbolt"
+    },
+    {
+      "id": 852,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "Which high-performance flash storage specification acronym denotes the standard chip memory protocol utilized inside almost all modern flagship smartphones?",
+      "answer": "UFS (Universal Flash Storage)"
+    },
+    {
+      "id": 853,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "Which innovative packaging technology was introduced by AMD to physically stack extra L3 SRAM directly on top of the processor die, massively boosting gaming performance?",
+      "answer": "3D V-Cache"
+    },
+    {
+      "id": 854,
+      "category": "hardware",
+      "difficulty": "easy",
+      "question": "Which British-designed microprocessor architecture absolutely dominates the global smartphone, tablet, and IoT markets due to its incredible power efficiency?",
+      "answer": "ARM"
+    },
+    {
+      "id": 855,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Which display technology synchronizes a monitor's refresh rate dynamically to perfectly match the frame output of the GPU, eliminating screen tearing?",
+      "answer": "Variable Refresh Rate (VRR / FreeSync / G-Sync)"
+    },
+    {
+      "id": 856,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Which high-end television panel technology utilizes a layer of semiconductor nanocrystals to drastically enhance color volume and brightness over standard LEDs?",
+      "answer": "QLED (Quantum Dot LED)"
+    },
+    {
+      "id": 857,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Inside a desktop computer's power supply, what specific electrical component is responsible for converting the wall's Alternating Current (AC) into Direct Current (DC)?",
+      "answer": "A Rectifier"
+    },
+    {
+      "id": 858,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "Which internal thermal cooling mechanism utilizes a sealed copper tube containing a phase-changing liquid to rapidly transfer heat away from a GPU or CPU die?",
+      "answer": "A Vapor Chamber (or Heat Pipe)"
+    },
+    {
+      "id": 859,
+      "category": "hardware",
+      "difficulty": "hard",
+      "question": "Which transparent, conductive semiconductor material is layered across almost all modern smartphone screens to register the electrical capacitance of a human finger?",
+      "answer": "Indium Tin Oxide (ITO)"
+    },
+    {
+      "id": 860,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "What is the technical term for the small, embedded high-speed RAM chip attached directly to a mechanical Hard Disk Drive to temporarily buffer frequently accessed data?",
+      "answer": "Disk Cache"
+    },
+    {
+      "id": 861,
+      "category": "cybersecurity",
+      "difficulty": "easy",
+      "question": "What is the industry term for a cyberattack that exploits an unknown software vulnerability on the exact same day the flaw is discovered, before developers can release a patch?",
+      "answer": "Zero-Day Exploit"
+    },
+    {
+      "id": 862,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "Which common web vulnerability allows malicious actors to inject client-side executable scripts directly into the webpages viewed by other users?",
+      "answer": "Cross-Site Scripting (XSS)"
+    },
+    {
+      "id": 863,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "In web security, what does the attack acronym CSRF stand for, referring to an exploit that forces a logged-in user's browser to execute unwanted actions on a trusted site?",
+      "answer": "Cross-Site Request Forgery"
+    },
+    {
+      "id": 864,
+      "category": "cybersecurity",
+      "difficulty": "easy",
+      "question": "What broad term describes the psychological manipulation of people to trick them into voluntarily surrendering confidential information or bypassing security protocols?",
+      "answer": "Social Engineering"
+    },
+    {
+      "id": 865,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "In cryptographic password storage, what is the technical term for adding a unique string of random data to a password before running it through a hash function?",
+      "answer": "Salting"
+    },
+    {
+      "id": 866,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "Released in 2018 by the Wi-Fi Alliance, what is the name of the current, most advanced wireless network security protocol standard?",
+      "answer": "WPA3 (Wi-Fi Protected Access 3)"
+    },
+    {
+      "id": 867,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "What cybersecurity term describes an intentionally vulnerable, decoy computer system set up to attract hackers in order to study their attack methods?",
+      "answer": "A Honeypot"
+    },
+    {
+      "id": 868,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "What extreme security protocol involves ensuring that a secure computer network is physically isolated and entirely disconnected from any unsecured external networks?",
+      "answer": "Air-Gapping"
+    },
+    {
+      "id": 869,
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "question": "Which highly dangerous class of malware is specifically engineered to aggressively conceal its existence and its payload deep within the core kernel files of an operating system?",
+      "answer": "A Rootkit"
+    },
+    {
+      "id": 870,
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "question": "What specific type of network attack occurs when a hacker captures a valid, secure data transmission and maliciously delays or repeatedly resends it to bypass authentication?",
+      "answer": "A Replay Attack"
+    },
+    {
+      "id": 871,
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "question": "Unlike encryption which scrambles a message, what is the term for the covert practice of hiding secret data invisibly within an ordinary, non-secret file or image?",
+      "answer": "Steganography"
+    },
+    {
+      "id": 872,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "Which modern malware tactic involves hackers not only locking a company's data, but also threatening to publicly leak stolen sensitive files online if the payout is refused?",
+      "answer": "Double Extortion Ransomware"
+    },
+    {
+      "id": 873,
+      "category": "cybersecurity",
+      "difficulty": "easy",
+      "question": "Which foundational network security system monitors and controls incoming and outgoing traffic based on predetermined, rigid security rules?",
+      "answer": "A Firewall"
+    },
+    {
+      "id": 874,
+      "category": "cybersecurity",
+      "difficulty": "easy",
+      "question": "Which automated software tool is routinely used by IT administrators to systematically check computers and networks against massive databases of known security flaws?",
+      "answer": "A Vulnerability Scanner"
+    },
+    {
+      "id": 875,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "In personal account security, what does the ubiquitous login acronym MFA stand for?",
+      "answer": "Multi-Factor Authentication"
+    },
+    {
+      "id": 876,
+      "category": "cybersecurity",
+      "difficulty": "easy",
+      "question": "What is the technical term for a massive, interconnected network of malware-infected computers controlled remotely by a single attacking party?",
+      "answer": "A Botnet"
+    },
+    {
+      "id": 877,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "During corporate security war-gaming exercises, which designated team acts exclusively as the defensive personnel attempting to secure the network?",
+      "answer": "The Blue Team"
+    },
+    {
+      "id": 878,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "During corporate security war-gaming exercises, which designated team acts as the ethical hackers simulating the offensive attack against the infrastructure?",
+      "answer": "The Red Team"
+    },
+    {
+      "id": 879,
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "question": "Which modern IT security framework completely eliminates the concept of 'inside the perimeter' safety, requiring strict verification for every single device and user request regardless of location?",
+      "answer": "Zero Trust Architecture"
+    },
+    {
+      "id": 880,
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "question": "Which globally recognized, comprehensive knowledge base and matrix framework maps out exactly how cyber adversaries behave, categorizing their specific tactics and execution techniques?",
+      "answer": "The MITRE ATT&CK Framework"
+    },
+    {
+      "id": 881,
+      "category": "emerging tech",
+      "difficulty": "medium",
+      "question": "Which highly efficient machine learning method involves taking a model that has already been trained on a massive dataset and adapting it to solve a new, related task?",
+      "answer": "Transfer Learning"
+    },
+    {
+      "id": 882,
+      "category": "emerging tech",
+      "difficulty": "easy",
+      "question": "Which machine learning paradigm involves feeding an algorithm completely raw, unlabeled data and tasking it with discovering hidden patterns or clusters entirely on its own?",
+      "answer": "Unsupervised Learning"
+    },
+    {
+      "id": 883,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "In generative AI architecture, what does the acronym GAN stand for, referencing a system where two neural networks contest against each other to generate realistic data?",
+      "answer": "Generative Adversarial Network"
+    },
+    {
+      "id": 884,
+      "category": "emerging tech",
+      "difficulty": "hard",
+      "question": "Which model-free reinforcement learning algorithm aims to learn the mathematical value of an action in a particular state to find the absolute optimal operational policy?",
+      "answer": "Q-Learning"
+    },
+    {
+      "id": 885,
+      "category": "emerging tech",
+      "difficulty": "easy",
+      "question": "What industry term is used to describe the phenomenon when a Large Language Model confidently generates false, fabricated, or nonsensical information that sounds completely plausible?",
+      "answer": "Hallucination"
+    },
+    {
+      "id": 886,
+      "category": "emerging tech",
+      "difficulty": "hard",
+      "question": "Which prominent evaluation algorithm calculates a mathematical score between 0 and 1 to judge the quality of machine-translated text against high-quality human references?",
+      "answer": "The BLEU Score (Bilingual Evaluation Understudy)"
+    },
+    {
+      "id": 887,
+      "category": "emerging tech",
+      "difficulty": "medium",
+      "question": "Which LLM interaction technique involves asking a model to perform a complex task without providing it with any prior examples or context formatting?",
+      "answer": "Zero-Shot Prompting"
+    },
+    {
+      "id": 888,
+      "category": "emerging tech",
+      "difficulty": "medium",
+      "question": "Which LLM optimization technique involves feeding a model two to three structured examples inside the prompt to heavily guide its eventual output style?",
+      "answer": "Few-Shot Prompting"
+    },
+    {
+      "id": 889,
+      "category": "emerging tech",
+      "difficulty": "hard",
+      "question": "Which AI compression procedure involves training a smaller, highly efficient 'student' model to perfectly mimic the outputs and behaviors of a massive 'teacher' model?",
+      "answer": "Knowledge Distillation"
+    },
+    {
+      "id": 890,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In complex LLM architecture layouts like GPT-4, what does the design acronym MoE stand for, describing a system that routes tokens only to specific, specialized sub-networks?",
+      "answer": "Mixture of Experts"
+    },
+    {
+      "id": 891,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "Which broad subfield of artificial intelligence, abbreviated as NLP, is dedicated to enabling computers to understand, interpret, and generate human language?",
+      "answer": "Natural Language Processing"
+    },
+    {
+      "id": 892,
+      "category": "emerging tech",
+      "difficulty": "easy",
+      "question": "In quantum computing hardware, what is the fundamental unit of data that can represent a 0, a 1, or any quantum superposition of those two states simultaneously?",
+      "answer": "A Qubit"
+    },
+    {
+      "id": 893,
+      "category": "emerging tech",
+      "difficulty": "hard",
+      "question": "Which prominent quantum computing hardware approach relies on suspending electrically charged atoms in free space using powerful electromagnetic fields?",
+      "answer": "Trapped-Ion Quantum Computing"
+    },
+    {
+      "id": 894,
+      "category": "emerging tech",
+      "difficulty": "hard",
+      "question": "What is the technical term for the highly delicate phenomenon where a quantum system loses its quantum state and collapses back into classical mechanics due to environmental interference?",
+      "answer": "Quantum Decoherence"
+    },
+    {
+      "id": 895,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "What does the immersive headset technology acronym VR stand for?",
+      "answer": "Virtual Reality"
+    },
+    {
+      "id": 896,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "What does the visual technology acronym AR stand for, describing systems that overlay digital information onto the real physical world?",
+      "answer": "Augmented Reality"
+    },
+    {
+      "id": 897,
+      "category": "emerging tech",
+      "difficulty": "hard",
+      "question": "Which advanced cryptographic method allows one party to definitively prove to a verifier that a statement is true without revealing any actual information beyond the truth of the statement itself?",
+      "answer": "Zero-Knowledge Proof (ZKP)"
+    },
+    {
+      "id": 898,
+      "category": "emerging tech",
+      "difficulty": "easy",
+      "question": "Which foundational distributed ledger technology securely records transactions across a peer-to-peer network of computers utilizing cryptographic hashes?",
+      "answer": "Blockchain"
+    },
+    {
+      "id": 899,
+      "category": "crypto",
+      "difficulty": "easy",
+      "question": "What specific term describes self-executing software programs residing on a blockchain that automatically execute when predetermined conditions are met?",
+      "answer": "Smart Contracts"
+    },
+    {
+      "id": 900,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In neurotechnology hardware, what does the acronym BCI stand for, representing a direct communication pathway between an enhanced biological brain and an external device?",
+      "answer": "Brain-Computer Interface"
+    },
+    {
+      "id": 901,
+      "category": "video games",
+      "difficulty": "easy",
+      "question": "What competitive gaming subculture focuses entirely on completing a video game or level as unbelievably fast as physically possible?",
+      "answer": "Speedrunning"
+    },
+    {
+      "id": 902,
+      "category": "video games",
+      "difficulty": "medium",
+      "question": "In the speedrunning community, what specific category title dictates that the player must beat the game as fast as possible without worrying about collecting items or hitting a specific completion marker?",
+      "answer": "Any%"
+    },
+    {
+      "id": 903,
+      "category": "video games",
+      "difficulty": "hard",
+      "question": "Which legendary professional Quake player, known by the alias 'Thresh', is historically credited with popularizing the WASD keyboard layout for PC gaming?",
+      "answer": "Dennis Fong"
+    },
+    {
+      "id": 904,
+      "category": "Tech history",
+      "difficulty": "hard",
+      "question": "Held at Stanford University's AI Lab in October 1972, a tournament for which foundational computer game is universally recognized as the world's very first e-sports event?",
+      "answer": "Spacewar!"
+    },
+    {
+      "id": 905,
+      "category": "video games",
+      "difficulty": "easy",
+      "question": "Up, Up, Down, Down, Left, Right, Left, Right, B, A, Start. What is the legendary pop-culture name for this specific video game input sequence?",
+      "answer": "The Konami Code"
+    },
+    {
+      "id": 906,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Which notorious 1995 Nintendo hardware console utilized a stereoscopic headset and a blinding red monochrome display, ultimately failing as a massive commercial disaster?",
+      "answer": "The Virtual Boy"
+    },
+    {
+      "id": 907,
+      "category": "hardware",
+      "difficulty": "medium",
+      "question": "Which 32-bit, dual-CPU, disc-based home console was launched by Sega in 1994 to compete directly against the original Sony PlayStation?",
+      "answer": "The Sega Saturn"
+    },
+    {
+      "id": 908,
+      "category": "hardware",
+      "difficulty": "easy",
+      "question": "What iconic, morbid nickname was given to the catastrophic hardware failure indicator that plagued millions of early Xbox 360 consoles?",
+      "answer": "The Red Ring of Death (RROD)"
+    },
+    {
+      "id": 909,
+      "category": "video games",
+      "difficulty": "medium",
+      "question": "Boasting over 154 million units sold globally, which specific handheld device holds the undisputed record as the highest-selling piece of hardware Nintendo has ever produced?",
+      "answer": "The Nintendo DS"
+    },
+    {
+      "id": 910,
+      "category": "video games",
+      "difficulty": "easy",
+      "question": "Which massively popular sandbox franchise, originally created by Markus Persson, allows players to explore, craft, and build inside a procedurally generated 3D block world?",
+      "answer": "Minecraft"
+    },
+    {
+      "id": 911,
+      "category": "video games",
+      "difficulty": "medium",
+      "question": "Which Japanese video game designer and auteur is the mastermind behind the Metal Gear franchise and the founder of his own independent studio production company?",
+      "answer": "Hideo Kojima"
+    },
+    {
+      "id": 912,
+      "category": "video games",
+      "difficulty": "easy",
+      "question": "In Nintendo's legendary The Legend of Zelda franchise, what is the actual name of the green-clad, sword-wielding protagonist controlled by the player?",
+      "answer": "Link"
+    },
+    {
+      "id": 913,
+      "category": "software",
+      "difficulty": "medium",
+      "question": "Which next-generation game engine framework developed by Epic Games introduced the highly advanced 'Nanite' geometry system and 'Lumen' global illumination?",
+      "answer": "Unreal Engine 5"
+    },
+    {
+      "id": 914,
+      "category": "video games",
+      "difficulty": "easy",
+      "question": "Which legendary 1993 first-person shooter created by id Software featured a space marine battling hordes of demons on Mars, effectively defining the FPS genre?",
+      "answer": "Doom"
+    },
+    {
+      "id": 915,
+      "category": "IT companies",
+      "difficulty": "medium",
+      "question": "Which elite PlayStation-owned video game development studio is responsible for creating the blockbuster Uncharted and The Last of Us franchises?",
+      "answer": "Naughty Dog"
+    },
+    {
+      "id": 916,
+      "category": "video games",
+      "difficulty": "medium",
+      "question": "What highly specific video game subgenre is explicitly characterized by procedurally generated dungeon levels, turn-based gameplay, and punishing permanent death (permadeath)?",
+      "answer": "Roguelike"
+    },
+    {
+      "id": 917,
+      "category": "video games",
+      "difficulty": "easy",
+      "question": "Which iconic Bethesda RPG franchise is set in a retro-futuristic, post-apocalyptic atomic wasteland heavily populated by subterranean 'Vault-Tec' bunkers?",
+      "answer": "Fallout"
+    },
+    {
+      "id": 918,
+      "category": "IT companies",
+      "difficulty": "medium",
+      "question": "Which massive online gaming platform allows its predominantly young user base to program and publish their own game experiences using the Lua programming language?",
+      "answer": "Roblox"
+    },
+    {
+      "id": 919,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "Established in 1994 following congressional hearings on video game violence, what does the North American rating board acronym ESRB stand for?",
+      "answer": "Entertainment Software Rating Board"
+    },
+    {
+      "id": 920,
+      "category": "video games",
+      "difficulty": "hard",
+      "question": "In the competitive Super Smash Bros. Melee scene, what advanced movement technique involves dodging into the ground immediately after jumping to slide across the stage?",
+      "answer": "Wavedashing"
+    },
+    {
+      "id": 921,
+      "category": "india tech",
+      "difficulty": "easy",
+      "question": "Which prominent Indian fintech unicorn, founded by Kunal Shah, built a massive user base by exclusively rewarding individuals with high credit scores for paying their credit card bills?",
+      "answer": "CRED"
+    },
+    {
+      "id": 922,
+      "category": "india tech",
+      "difficulty": "easy",
+      "question": "Which highly aggressive Indian consumer electronics brand, co-founded by Aman Gupta, currently dominates the domestic budget audio and smart-wearables market?",
+      "answer": "boAt"
+    },
+    {
+      "id": 923,
+      "category": "india tech",
+      "difficulty": "medium",
+      "question": "Founded by the Kamath brothers, which massive Indian financial services company completely disrupted the domestic market by pioneering the discount brokerage model?",
+      "answer": "Zerodha"
+    },
+    {
+      "id": 924,
+      "category": "india tech",
+      "difficulty": "medium",
+      "question": "Which globally operating Indian multinational software company, headquartered in Chennai and founded by Sridhar Vembu, is renowned for its massive suite of SaaS applications?",
+      "answer": "Zoho Corporation"
+    },
+    {
+      "id": 925,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which prominent Indian billionaire businessman and philanthropist inherited a vegetable oil company and transformed it into the IT giant Wipro?",
+      "answer": "Azim Premji"
+    },
+    {
+      "id": 926,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "What is the official operational name of the Indian Space Research Organisation's (ISRO) flagship project designed to send a crewed spacecraft into Low Earth Orbit?",
+      "answer": "Gaganyaan"
+    },
+    {
+      "id": 927,
+      "category": "india tech",
+      "difficulty": "hard",
+      "question": "Commissioned in 2003, which specific C-DAC engineered machine became the very first Indian supercomputer to officially break the 1 Teraflop performance barrier?",
+      "answer": "PARAM Padma"
+    },
+    {
+      "id": 928,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "Developed by the NPCI, what is the exact full expansion of the Indian government's mobile payment app acronym BHIM?",
+      "answer": "Bharat Interface for Money"
+    },
+    {
+      "id": 929,
+      "category": "india tech",
+      "difficulty": "hard",
+      "question": "What is the official operational name for the Government of India's 'GI Cloud' initiative, designed to establish a massive, secure cloud computing environment for all government departments?",
+      "answer": "MeghRaj"
+    },
+    {
+      "id": 930,
+      "category": "IT companies",
+      "difficulty": "easy",
+      "question": "Which massive Indian telecommunications network, launched by Mukesh Ambani, effectively triggered India's digital revolution by offering ultra-cheap 4G data access?",
+      "answer": "Reliance Jio"
+    },
+    {
+      "id": 931,
+      "category": "india tech",
+      "difficulty": "easy",
+      "question": "Which flagship Indian government digitization platform allows citizens to securely store, issue, and verify official digital documents and certificates in the cloud?",
+      "answer": "DigiLocker"
+    },
+    {
+      "id": 932,
+      "category": "india tech",
+      "difficulty": "easy",
+      "question": "Which highly robust digital platform was engineered and deployed by the Indian government specifically to manage and track the nationwide rollout of the COVID-19 vaccination drive?",
+      "answer": "CoWIN (Covid Vaccine Intelligence Network)"
+    },
+    {
+      "id": 933,
+      "category": "IT companies",
+      "difficulty": "medium",
+      "question": "In 1999, which Bengaluru-headquartered technology firm made corporate history by becoming the very first Indian IT company to be listed on the US NASDAQ stock exchange?",
+      "answer": "Infosys"
+    },
+    {
+      "id": 934,
+      "category": "IT companies",
+      "difficulty": "easy",
+      "question": "Which massive domestic e-commerce giant was established in 2007 by Sachin Bansal and Binny Bansal operating out of a small apartment in Bengaluru?",
+      "answer": "Flipkart"
+    },
+    {
+      "id": 935,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "Which historic ISRO lunar probe mission utilized its Moon Mineralogy Mapper payload to successfully confirm the presence of widespread water molecules in the lunar soil?",
+      "answer": "Chandrayaan-1"
+    },
+    {
+      "id": 936,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "Which identical deep-space probes, launched by NASA in 1977, both carry a gold-plated copper phonograph record containing sounds, music, and images of Earth?",
+      "answer": "The Voyager Probes (Voyager 1 and 2)"
+    },
+    {
+      "id": 937,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "Deployed into Low Earth Orbit by the Space Shuttle Discovery, in what specific year was the iconic Hubble Space Telescope officially launched?",
+      "answer": "1990"
+    },
+    {
+      "id": 938,
+      "category": "space tech",
+      "difficulty": "hard",
+      "question": "Which joint NASA-ESA-ASI robotic spacecraft mission successfully dropped the Huygens probe onto the surface of Saturn's largest moon, Titan?",
+      "answer": "The Cassini-Huygens Mission"
+    },
+    {
+      "id": 939,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "What is the name of Blue Origin's fully reusable, vertical-takeoff, vertical-landing suborbital launch vehicle designed primarily for space tourism?",
+      "answer": "New Shepard"
+    },
+    {
+      "id": 940,
+      "category": "space tech",
+      "difficulty": "easy",
+      "question": "Which massive SpaceX launch vehicle famously fired a cherry-red Tesla Roadster carrying a mannequin named 'Starman' into a heliocentric orbit?",
+      "answer": "Falcon Heavy"
+    },
+    {
+      "id": 941,
+      "category": "space tech",
+      "difficulty": "hard",
+      "question": "What specific name is given to the highly advanced, full-flow staged combustion cycle rocket engines developed entirely in-house to power the SpaceX Starship?",
+      "answer": "Raptor Engines"
+    },
+    {
+      "id": 942,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "What is the specific mission designation for NASA's highly anticipated crewed spaceflight that will fly four astronauts around the Moon and back without landing?",
+      "answer": "Artemis II"
+    },
+    {
+      "id": 943,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "What is the operational name of the European Space Agency's (ESA) flagship family of heavy-lift expendable launch vehicles?",
+      "answer": "Ariane"
+    },
+    {
+      "id": 944,
+      "category": "Tech history",
+      "difficulty": "medium",
+      "question": "Which historic Soviet spacecraft capsule carried Yuri Gagarin, the very first human being to journey into outer space, in April 1961?",
+      "answer": "Vostok 1"
+    },
+    {
+      "id": 945,
+      "category": "Tech history",
+      "difficulty": "easy",
+      "question": "What was the official fleet name of the partially reusable, low Earth orbital spacecraft system operated by NASA between 1981 and 2011?",
+      "answer": "The Space Shuttle"
+    },
+    {
+      "id": 946,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "Which car-sized NASA rover successfully landed inside Gale Crater on Mars in August 2012 and has been continuously exploring the region ever since?",
+      "answer": "Curiosity"
+    },
+    {
+      "id": 947,
+      "category": "space tech",
+      "difficulty": "hard",
+      "question": "What was the name of NASA's very first successful, robotic Mars rover, which landed on the red planet in 1997 as part of the Mars Pathfinder mission?",
+      "answer": "Sojourner"
+    },
+    {
+      "id": 948,
+      "category": "space tech",
+      "difficulty": "hard",
+      "question": "What is the name of NASA's ambitious, upcoming New Frontiers mission designed to send a robotic dual-quadcopter to fly across the surface of Saturn's moon Titan?",
+      "answer": "Dragonfly"
+    },
+    {
+      "id": 949,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "Which retired NASA space telescope was launched in 2009 with the sole, highly specific mission of surveying the Milky Way galaxy to discover Earth-size exoplanets?",
+      "answer": "The Kepler Space Telescope"
+    },
+    {
+      "id": 950,
+      "category": "space tech",
+      "difficulty": "easy",
+      "question": "What orbital mechanics term describes the common spacecraft maneuver of using the gravitational pull of a planet to alter a ship's path and slingshot it forward?",
+      "answer": "Gravity Assist"
+    },
+    {
+      "id": 951,
+      "category": "tech personalities",
+      "difficulty": "hard",
+      "question": "Which pioneering computer scientist served as the Director of the Software Engineering Division at MIT, writing the critical flight software for the Apollo space program?",
+      "answer": "Margaret Hamilton"
+    },
+    {
+      "id": 952,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which brilliant NASA mathematician's manual calculations of orbital mechanics were absolutely critical to the success of the first US crewed spaceflights?",
+      "answer": "Katherine Johnson"
+    },
+    {
+      "id": 953,
+      "category": "tech personalities",
+      "difficulty": "hard",
+      "question": "Which two computer scientists are globally recognized as the 'Fathers of the Internet' for jointly inventing the TCP/IP networking protocols?",
+      "answer": "Vint Cerf and Bob Kahn"
+    },
+    {
+      "id": 954,
+      "category": "tech personalities",
+      "difficulty": "easy",
+      "question": "Which highly flamboyant American billionaire businessman co-founded the massive database software conglomerate Oracle Corporation?",
+      "answer": "Larry Ellison"
+    },
+    {
+      "id": 955,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which prominent cloud computing billionaire and philanthropist founded Salesforce and fundamentally pioneered the 'Software as a Service' (SaaS) business model?",
+      "answer": "Marc Benioff"
+    },
+    {
+      "id": 956,
+      "category": "tech personalities",
+      "difficulty": "hard",
+      "question": "Which tech founder created the Oculus Rift prototype in his parents' garage, sold the company to Facebook, and later established the defense tech firm Anduril?",
+      "answer": "Palmer Luckey"
+    },
+    {
+      "id": 957,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which legendary Japanese video game designer and Nintendo executive is universally celebrated for creating the Mario, Zelda, and Donkey Kong franchises?",
+      "answer": "Shigeru Miyamoto"
+    },
+    {
+      "id": 958,
+      "category": "tech personalities",
+      "difficulty": "hard",
+      "question": "Which genius lead programmer co-founded id Software and pioneered the technical development of foundational 3D game engines for titles like Doom and Quake?",
+      "answer": "John Carmack"
+    },
+    {
+      "id": 959,
+      "category": "tech personalities",
+      "difficulty": "easy",
+      "question": "Which former Microsoft employee co-founded Valve Corporation and serves as the iconic president of the PC gaming behemoth Steam?",
+      "answer": "Gabe Newell"
+    },
+    {
+      "id": 960,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which Dutch programmer is famous worldwide for inventing the Python programming language?",
+      "answer": "Guido van Rossum"
+    },
+    {
+      "id": 961,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which Danish computer scientist authored the highly complex C++ programming language as an extension to the original C framework?",
+      "answer": "Bjarne Stroustrup"
+    },
+    {
+      "id": 962,
+      "category": "tech personalities",
+      "difficulty": "easy",
+      "question": "Which legendary British industrial designer served as the Chief Design Officer of Apple, shaping the iconic physical looks of the iMac, iPod, and iPhone?",
+      "answer": "Jony Ive"
+    },
+    {
+      "id": 963,
+      "category": "tech personalities",
+      "difficulty": "easy",
+      "question": "Which American business executive succeeded Steve Jobs to become the Chief Executive Officer of Apple Inc.?",
+      "answer": "Tim Cook"
+    },
+    {
+      "id": 964,
+      "category": "tech personalities",
+      "difficulty": "medium",
+      "question": "Which engineering pioneer co-founded Intel Corporation in 1968 and articulated the famous law predicting the exponential scaling of transistor density?",
+      "answer": "Gordon Moore"
+    },
+    {
+      "id": 965,
+      "category": "tech personalities",
+      "difficulty": "easy",
+      "question": "Which English computer scientist is universally credited as the sole inventor of the World Wide Web?",
+      "answer": "Tim Berners-Lee"
+    },
+    {
+      "id": 966,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "In general software development, what does the package acronym SDK stand for?",
+      "answer": "Software Development Kit"
+    },
+    {
+      "id": 967,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "In coding applications, what does the software acronym IDE stand for?",
+      "answer": "Integrated Development Environment"
+    },
+    {
+      "id": 968,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In data structuring and documentation formatting, what does the acronym XML stand for?",
+      "answer": "eXtensible Markup Language"
+    },
+    {
+      "id": 969,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "In network security tunneling, what does the communications protocol acronym IPsec stand for?",
+      "answer": "Internet Protocol Security"
+    },
+    {
+      "id": 970,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In routing architecture, what does the networking acronym NAT stand for?",
+      "answer": "Network Address Translation"
+    },
+    {
+      "id": 971,
+      "category": "acronyms",
+      "difficulty": "easy",
+      "question": "In computer networking scale, what does the acronym WAN stand for?",
+      "answer": "Wide Area Network"
+    },
+    {
+      "id": 972,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In computer networking, what does the short-range device acronym PAN stand for?",
+      "answer": "Personal Area Network"
+    },
+    {
+      "id": 973,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "In the core routing architecture of the global internet, what does the protocol acronym BGP stand for?",
+      "answer": "Border Gateway Protocol"
+    },
+    {
+      "id": 974,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "In internal enterprise network routing, what does the path-finding protocol acronym OSPF stand for?",
+      "answer": "Open Shortest Path First"
+    },
+    {
+      "id": 975,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In frontend web development architecture, what does the structural acronym DOM stand for?",
+      "answer": "Document Object Model"
+    },
+    {
+      "id": 976,
+      "category": "sports tech",
+      "difficulty": "medium",
+      "question": "Which historic electronic line-calling system, utilizing an infrared grid, was widely used in professional tennis before being completely replaced by Hawk-Eye?",
+      "answer": "Cyclops"
+    },
+    {
+      "id": 977,
+      "category": "sports tech",
+      "difficulty": "hard",
+      "question": "Which highly advanced, real-time laser and camera tracking system is utilized by the PGA Tour to map every single golf shot taken during a tournament?",
+      "answer": "ShotLink"
+    },
+    {
+      "id": 978,
+      "category": "sports tech",
+      "difficulty": "hard",
+      "question": "Which camera-based tracking system was famously installed across Major League Baseball stadiums to track pitch velocity, movement, and release points?",
+      "answer": "Pitchf/x (or Statcast/Hawk-Eye)"
+    },
+    {
+      "id": 979,
+      "category": "sports tech",
+      "difficulty": "medium",
+      "question": "What was the name of the official 'smart' football used in the 2022 FIFA World Cup, equipped with internal IMU sensors to provide real-time VAR offside data?",
+      "answer": "Al Rihla"
+    },
+    {
+      "id": 980,
+      "category": "sports tech",
+      "difficulty": "medium",
+      "question": "What specific sensor technology is universally embedded into NFL player shoulder pads to supply the league's advanced 'Next Gen Stats' positional data?",
+      "answer": "RFID Tags"
+    },
+    {
+      "id": 981,
+      "category": "sports tech",
+      "difficulty": "easy",
+      "question": "What popular terminology defines the empirical analysis of baseball through highly advanced player statistics, famously popularized by the Oakland Athletics?",
+      "answer": "Moneyball (or Sabermetrics)"
+    },
+    {
+      "id": 982,
+      "category": "sports tech",
+      "difficulty": "hard",
+      "question": "Which emerging wearable hardware allows competitive swimmers to view their live lap splits, stroke rates, and hydrodynamics directly inside their peripheral vision?",
+      "answer": "Smart Swim Goggles (e.g., FORM Goggles)"
+    },
+    {
+      "id": 983,
+      "category": "sports tech",
+      "difficulty": "medium",
+      "question": "Which high-end cycling technology replaces traditional mechanical cables with motorized derailleurs, allowing riders to shift gears using electronic buttons?",
+      "answer": "Electronic Shifting (e.g., Shimano Di2)"
+    },
+    {
+      "id": 984,
+      "category": "sports tech",
+      "difficulty": "easy",
+      "question": "What broad technical term describes the highly advanced, wireless transmission of thousands of data points from a Formula 1 car directly to the pit wall engineers in real-time?",
+      "answer": "Telemetry"
+    },
+    {
+      "id": 985,
+      "category": "sports tech",
+      "difficulty": "easy",
+      "question": "Which massive virtual cycling platform seamlessly connects to a user's smart indoor trainer, simulating physical resistance gradients for highly competitive e-sports races?",
+      "answer": "Zwift"
+    },
+    {
+      "id": 986,
+      "category": "robotics",
+      "difficulty": "easy",
+      "question": "What is the official name of the highly agile, quadruped robotic 'dog' developed and commercialized by Boston Dynamics?",
+      "answer": "Spot"
+    },
+    {
+      "id": 987,
+      "category": "robotics",
+      "difficulty": "hard",
+      "question": "Which massively popular line of flexible, collaborative robotic arms, widely used in light manufacturing, is the flagship product of Universal Robots?",
+      "answer": "The UR Series (e.g., UR5)"
+    },
+    {
+      "id": 988,
+      "category": "IT companies",
+      "difficulty": "hard",
+      "question": "Headquartered in Japan and instantly recognized by their bright yellow machinery, which massive corporate entity is the world's largest manufacturer of industrial robots?",
+      "answer": "FANUC"
+    },
+    {
+      "id": 989,
+      "category": "robotics",
+      "difficulty": "medium",
+      "question": "Which historic international robotics competition operates with the ultimate goal of developing a team of fully autonomous humanoid robots that can defeat the human World Cup champions by 2050?",
+      "answer": "RoboCup"
+    },
+    {
+      "id": 990,
+      "category": "space tech",
+      "difficulty": "medium",
+      "question": "Which robotic NASA Mars rover was launched in 2003 alongside its twin Opportunity, ultimately becoming stuck in a sand trap in 2009?",
+      "answer": "Spirit"
+    },
+    {
+      "id": 991,
+      "category": "space tech",
+      "difficulty": "easy",
+      "question": "Which highly advanced Mars rover, launched by NASA in 2020, successfully carried and deployed the experimental Ingenuity helicopter?",
+      "answer": "Perseverance"
+    },
+    {
+      "id": 992,
+      "category": "robotics",
+      "difficulty": "easy",
+      "question": "What specific sub-field terminology refers to the design, construction, and operation of robots that physically look, act, and move like biological human beings?",
+      "answer": "Humanoid Robotics (or Androids)"
+    },
+    {
+      "id": 993,
+      "category": "robotics",
+      "difficulty": "hard",
+      "question": "Which rugged, tracked military robot, heavily utilized by US forces in Iraq and Afghanistan, was specifically designed for explosive ordnance disposal and bomb defusal?",
+      "answer": "The PackBot (or TALON)"
+    },
+    {
+      "id": 994,
+      "category": "IT companies",
+      "difficulty": "medium",
+      "question": "Which specific corporate subsidiary, formed after the acquisition of Kiva Systems, develops the massive fleet of autonomous drive units that power Amazon's fulfillment centers?",
+      "answer": "Amazon Robotics"
+    },
+    {
+      "id": 995,
+      "category": "robotics",
+      "difficulty": "medium",
+      "question": "What futuristic subset of technology deals with engineering microscopic robots designed to operate at the molecular level, particularly for targeted medical treatments?",
+      "answer": "Nanorobotics (Nanobots)"
+    },
+    {
+      "id": 996,
+      "category": "crypto",
+      "difficulty": "medium",
+      "question": "Which energy-efficient blockchain consensus algorithm requires network validators to be chosen to create new blocks based entirely on the number of coins they currently hold and lock up?",
+      "answer": "Proof of Stake (PoS)"
+    },
+    {
+      "id": 997,
+      "category": "acronyms",
+      "difficulty": "hard",
+      "question": "Which decentralized, peer-to-peer hypermedia protocol was specifically engineered to replace traditional HTTP routing to create a more resilient, distributed web hosting infrastructure?",
+      "answer": "IPFS (InterPlanetary File System)"
+    },
+    {
+      "id": 998,
+      "category": "acronyms",
+      "difficulty": "medium",
+      "question": "In blockchain infrastructure, what does the acronym DAO stand for, describing an organization represented completely by rules encoded transparently as a computer program?",
+      "answer": "Decentralized Autonomous Organization"
+    },
+    {
+      "id": 999,
+      "category": "crypto",
+      "difficulty": "medium",
+      "question": "Which highly popular, fox-themed browser extension functions as a software crypto wallet, allowing users to interact directly with the Ethereum decentralized ecosystem?",
+      "answer": "MetaMask"
+    },
+    {
+      "id": 1000,
+      "category": "crypto",
+      "difficulty": "easy",
+      "question": "What is the technical security term for a physical hardware device, like a Ledger or Trezor, used to securely store cryptocurrency private keys completely offline?",
+      "answer": "Cold Wallet (or Hardware Wallet)"
     }
   ]
 }
