@@ -147,6 +147,7 @@
             </div>
         </section>
 
+        <!-- EXTERNAL RESOURCES PAGE -->
         <section id="view-external" class="view-section hidden">
             <button class="back-btn" data-target="view-home">&larr; Back to Home</button>
             <div class="kb-header">
@@ -155,46 +156,74 @@
             </div>
             
             <div class="external-links-container">
+                <!-- Google Doodles -->
                 <a href="https://doodles.google/search/?topic_tags=video%20games&topic_tags=computer%20science&topic_tags=engineering&topic_tags=space&topic_tags=telecommunications" target="_blank" class="external-card">
                     <span class="link-title">Google Doodles Archive ↗</span>
                     <span class="link-desc">Pre-sorted timelines for CS, Engineering, Space, and Telecommunications milestones.</span>
                 </a>
 
-                <div class="external-card tcs-archive-card">
-                    <span class="link-title">Past TCS InQuizitive Quizzes 🏆</span>
-                    <span class="link-desc">Archive of recent regional and national finals. (Links coming soon)</span>
+                <!-- TCS InQuizitive Archive Launcher -->
+                <button class="external-card tcs-launcher nav-btn" data-target="view-tcs-archives" style="text-align: left; width: 100%; border-radius: 8px; background-color: var(--card-bg);">
+                    <span class="link-title">Past TCS InQuizitive Quizzes 🏆 &rarr;</span>
+                    <span class="link-desc">Explore the dedicated archive of recent regional and national finals.</span>
+                </button>
+            </div>
+        </section>
 
-                    <div class="archive-tree">
-                        <details class="archive-year">
-                            <summary>2025 Season</summary>
-                            <ul>
-                                <li>
-                                    <strong>2025 All Regional Finals</strong>
-                                    <span class="sub-text">Bangalore, Chennai, Hyderabad, Pune, Indore, Nagpur, Delhi, Mumbai, Ahmedabad, Kochi</span>
-                                </li>
-                                <li><strong>2025 National Finals</strong></li>
-                            </ul>
-                        </details>
+        <!-- TCS ARCHIVES PAGE -->
+        <section id="view-tcs-archives" class="view-section hidden">
+            <button class="back-btn" data-target="view-external">&larr; Back to Resources</button>
+            <div class="kb-header">
+                <h2>🏆 TCS InQuizitive Archive</h2>
+                <p>Select a season to load the specific regional and national broadcasts.</p>
+            </div>
 
-                        <details class="archive-year">
-                            <summary>2024 Season</summary>
-                            <ul>
-                                <li>
-                                    <strong>2024 All Regional Finals</strong>
-                                    <span class="sub-text">Delhi, Mumbai, Kolkata, Bengaluru, Chennai, Bhubaneswar, Ahmedabad, Hyderabad, Pune, Indore, Nagpur, Kochi</span>
-                                </li>
-                                <li><strong>2024 National Finals</strong></li>
-                            </ul>
-                        </details>
+            <!-- Master Year Toggles -->
+            <div class="year-button-grid">
+                <button class="action-btn year-btn" data-year="2025">2025 Season</button>
+                <button class="action-btn year-btn" data-year="2024">2024 Season</button>
+                <a href="https://www.youtube.com/watch?v=bqkQC_XSH8U" target="_blank" class="action-btn alt-btn">2023 National Final ↗</a>
+                <a href="https://www.youtube.com/watch?v=305v8b9mUxU" target="_blank" class="action-btn alt-btn">2022 National Final ↗</a>
+            </div>
 
-                        <div class="archive-single">
-                            <strong>2023 National Final</strong>
-                        </div>
+            <hr class="section-divider">
 
-                        <div class="archive-single">
-                            <strong>2022 National Final</strong>
-                        </div>
-                    </div>
+            <!-- 2025 Broadcasts -->
+            <div id="links-2025" class="links-panel hidden">
+                <h3>2025 Regional Finals</h3>
+                <div class="video-button-grid">
+                    <a href="https://www.youtube.com/watch?v=WC6Cfq-cB0c" target="_blank" class="video-btn">Bangalore</a>
+                    <a href="https://www.youtube.com/watch?v=WB4irBVuQYk" target="_blank" class="video-btn">Chennai</a>
+                    <a href="https://www.youtube.com/watch?v=IkLzJz0dEQI" target="_blank" class="video-btn">Hyderabad</a>
+                    <a href="https://www.youtube.com/watch?v=SPiLWF-eqgo" target="_blank" class="video-btn">Pune</a>
+                    <a href="https://www.youtube.com/watch?v=Ih5WkPYFWjA" target="_blank" class="video-btn">Indore</a>
+                    <a href="https://www.youtube.com/watch?v=IvhSKAoEPOo" target="_blank" class="video-btn">Nagpur</a>
+                    <a href="https://www.youtube.com/watch?v=S1FunmAgfTw" target="_blank" class="video-btn">Delhi</a>
+                    <a href="https://www.youtube.com/watch?v=g9xWIKH8xrA" target="_blank" class="video-btn">Mumbai</a>
+                    <a href="https://www.youtube.com/watch?v=IFRaTU5kQzw" target="_blank" class="video-btn">Ahmedabad</a>
+                    <a href="https://www.youtube.com/watch?v=eOib8s8OEeQ" target="_blank" class="video-btn">Kochi</a>
+                </div>
+            </div>
+
+            <!-- 2024 Broadcasts -->
+            <div id="links-2024" class="links-panel hidden">
+                <div class="video-button-grid" style="margin-bottom: 2rem;">
+                    <a href="https://www.youtube.com/watch?v=-aVdB8dJ0pY" target="_blank" class="video-btn highlight-btn">2024 National Finals</a>
+                </div>
+                <h3>2024 Regional Finals</h3>
+                <div class="video-button-grid">
+                    <a href="https://www.youtube.com/watch?v=IPJcX11apGg&pp=0gcJCQYKAYcqIYzv" target="_blank" class="video-btn">Delhi</a>
+                    <a href="https://www.youtube.com/watch?v=tsb68mJHUjs" target="_blank" class="video-btn">Mumbai</a>
+                    <a href="https://www.youtube.com/watch?v=K90Y8OJnMq4" target="_blank" class="video-btn">Kolkata</a>
+                    <a href="https://www.youtube.com/watch?v=CHZ_VQNeVRA" target="_blank" class="video-btn">Bengaluru</a>
+                    <a href="https://www.youtube.com/watch?v=hBpSEVkz7mI" target="_blank" class="video-btn">Chennai</a>
+                    <a href="https://www.youtube.com/watch?v=jE65_X8yvNY" target="_blank" class="video-btn">Bhubaneswar</a>
+                    <a href="https://www.youtube.com/watch?v=5CQuov58SOo" target="_blank" class="video-btn">Ahmedabad</a>
+                    <a href="https://www.youtube.com/watch?v=eyiwLIJ8vt4" target="_blank" class="video-btn">Hyderabad</a>
+                    <a href="https://www.youtube.com/watch?v=wYpswdtymrU" target="_blank" class="video-btn">Pune</a>
+                    <a href="https://www.youtube.com/watch?v=QwwMaKQR6zg" target="_blank" class="video-btn">Indore</a>
+                    <a href="https://www.youtube.com/watch?v=Ul7xkbNKKGc" target="_blank" class="video-btn">Nagpur</a>
+                    <a href="https://www.youtube.com/watch?v=-P-tkc9xhEg" target="_blank" class="video-btn">Kochi</a>
                 </div>
             </div>
         </section>
