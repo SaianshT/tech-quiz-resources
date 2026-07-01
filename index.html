@@ -167,6 +167,12 @@
                     <span class="link-title">Past TCS InQuizitive Quizzes 🏆 &rarr;</span>
                     <span class="link-desc">Explore the dedicated archive of recent regional and national finals.</span>
                 </button>
+
+                <!-- ShriTeq Archive Launcher -->
+                <button class="external-card nav-btn" data-target="view-shriteq-archives" style="text-align: left; width: 100%; border-radius: 8px; background-color: var(--card-bg); margin-top: 1rem; cursor: pointer; border: 1px solid var(--border-color); transition: all 0.2s ease;">
+                    <span class="link-title">ShriTeq Livestreams 🎥 &rarr;</span>
+                    <span class="link-desc">Explore the dedicated archive of recent ShriTeq Middle and Senior broadcasts.</span>
+                </button>
             </div>
         </section>
 
@@ -230,6 +236,56 @@
                 </div>
             </div>
         </section>
+        <!-- SHRITEQ ARCHIVES PAGE -->
+        <section id="view-shriteq-archives" class="view-section hidden">
+            <button class="back-btn" data-target="view-external">&larr; Back to Resources</button>
+            <div class="kb-header">
+                <h2>🎥 ShriTeq Livestreams</h2>
+                <p>Select a year to load the specific Middle and Senior school broadcasts.</p>
+            </div>
+
+            <!-- Master Year Toggles -->
+            <div class="year-button-grid">
+                <button class="action-btn shriteq-year-btn" data-year="2025">2025 Season</button>
+                <button class="action-btn shriteq-year-btn" data-year="2024">2024 Season</button>
+                <button class="action-btn shriteq-year-btn" data-year="2023">2023 Season</button>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 2025 Broadcasts -->
+            <div id="shriteq-links-2025" class="shriteq-links-panel hidden">
+                <h3>2025 Broadcasts</h3>
+                <div class="video-button-grid">
+                    <a href="https://youtu.be/FBklvjP9rtE?t=10744" target="_blank" class="video-btn highlight-btn">Senior Finals</a>
+                    <a href="https://youtu.be/LGFVDkK_wTc?t=17521" target="_blank" class="video-btn">Senior Semis</a>
+                    <a href="https://youtu.be/FBklvjP9rtE?t=1186" target="_blank" class="video-btn">Middle Finals</a>
+                    <a href="https://youtu.be/LGFVDkK_wTc?t=13057" target="_blank" class="video-btn">Middle Semis</a>
+                </div>
+            </div>
+
+            <!-- 2024 Broadcasts -->
+            <div id="shriteq-links-2024" class="shriteq-links-panel hidden">
+                <h3>2024 Broadcasts</h3>
+                <div class="video-button-grid">
+                    <a href="https://youtu.be/ch6WOpw917U?t=11969" target="_blank" class="video-btn highlight-btn">Senior Finals</a>
+                    <a href="https://youtu.be/fQQC8_rNQTc?t=1199" target="_blank" class="video-btn">Senior Semis</a>
+                    <a href="https://youtu.be/ch6WOpw917U?t=938" target="_blank" class="video-btn">Middle Finals</a>
+                    <a href="https://youtu.be/fQQC8_rNQTc?t=6376" target="_blank" class="video-btn">Middle Semis</a>
+                </div>
+            </div>
+
+            <!-- 2023 Broadcasts -->
+            <div id="shriteq-links-2023" class="shriteq-links-panel hidden">
+                <h3>2023 Broadcasts</h3>
+                <div class="video-button-grid">
+                    <a href="https://youtu.be/NSIZkvCryQA?t=11922" target="_blank" class="video-btn highlight-btn">Senior Finals</a>
+                    <a href="https://youtu.be/xEQYpO1Xses?t=320" target="_blank" class="video-btn">Senior Semis</a>
+                    <a href="https://youtu.be/NSIZkvCryQA?t=1220" target="_blank" class="video-btn">Middle Finals</a>
+                    <a href="https://youtu.be/xEQYpO1Xses?t=5370" target="_blank" class="video-btn">Middle Semis</a>
+                </div>
+            </div>
+        </section>        
     </main>
 
     <script src="app.js"></script>
