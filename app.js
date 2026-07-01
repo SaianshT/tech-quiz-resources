@@ -395,3 +395,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// ==========================================
+// 🔗 EXTERNAL RESOURCES: SHRITEQ ARCHIVE LOGIC
+// ==========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Setup Navigation for the ShriTeq Archive Page
+    const shriteqLaunchers = document.querySelectorAll('[data-target="view-shriteq-archives"]');
+    shriteqLaunchers.forEach(launcher => {
+        launcher.addEventListener('click', (e) => {
+            const targetId = e.currentTarget.getAttribute('data-target');
+            // Hide all views
+            document.querySelectorAll('.view-section').forEach(sec => sec.classList.add('hidden'));
+            // Show target
+            document.getElementById(targetId).classList.remove('hidden');
+        });
+    });
+
+    // 2. Setup ShriTeq Year Toggle Logic
+    const shriteqYearButtons = document.querySelectorAll('.shriteq-year-btn');
+    shriteqYearButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Hide all ShriTeq link panels
+            document.querySelectorAll('.shriteq-links-panel').forEach(panel => panel.classList.add('hidden'));
+            
+            // Remove active styling from all ShriTeq year buttons
+            shriteqYearButtons.forEach(b => b.classList.remove('active-year'));
+
+            // Show selected panel and highlight button
+            const year = e.target.getAttribute('data-year');
+            const targetPanel = document.getElementById(`shriteq-links-${year}`);
+            if (targetPanel) {
+                targetPanel.classList.remove('hidden');
+            }
+            e.target.classList.add('active-year');
+        });
+    });
+});
